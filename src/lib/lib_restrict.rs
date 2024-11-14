@@ -17,3 +17,11 @@ impl<'a> Thing<'a> {
         self.run_data
     }
 }
+
+pub fn select<F>(f: F, l: &[&str])
+    where F: Fn(&str) -> Result<&str, std::convert::Infallible>
+{
+    for s in l {
+        println!("{}", f(s).unwrap());
+    }
+}
