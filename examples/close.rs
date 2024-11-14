@@ -1,3 +1,6 @@
+// https://stackoverflow.com/questions/31403723/how-to-declare-a-higher-ranked-lifetime-for-a-closure-argument
+// https://rust-lang.github.io/rfcs/3216-closure-lifetime-binder.html
+
 #![feature(closure_lifetime_binder)]
 
 fn main() {
